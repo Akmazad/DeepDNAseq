@@ -1,4 +1,5 @@
 # example is based on "DL with Python book #CH5 - by Francois Chollet"
+# Example data is the MNIST data
 
 # instantiating a small Convnet
 from keras import layers
