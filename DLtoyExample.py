@@ -1,4 +1,4 @@
-# example is based on "DL with Python book - CH5"
+# example is based on "DL with Python book #CH5 - by Francois Chollet"
 
 # instantiating a small Convnet
 from keras import layers
