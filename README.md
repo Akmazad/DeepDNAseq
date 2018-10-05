@@ -1,5 +1,5 @@
 # DeepRNAseq
-RNA-seq analysis with deep learning using PyTorch in High performance computing (HPC) environment
+RNA-seq analysis with deep learning using Keras (tensorflow backend) in High performance computing (HPC) environment
 
 ## Installation
 - Preparing HPC for running Pytoroch. 
@@ -27,10 +27,25 @@ RNA-seq analysis with deep learning using PyTorch in High performance computing 
 python3 <yourPythonFile.py>
 
 ## Training Data
-Use training dataset from DeepSea
+Use training dataset from a Toy training data ('toy_TrainData.csv' and 'toy_TrainLabel.csv'). This data set represents 2047 training samples (DNA sequences here) composed of random number of positive and negative samples, each having a lenth of 1000. For convenience this data set has been pre- one-hot encoded. Hence it has the dimension of [8188,1000] (2047 * 4 = 8188).
 
 ## Model
+ - Training model has CNN (convolutional neural network) architecture with three convolution layer (each accompanied with a leaky Relu layer, aka activation layer; a maxpooling layer; and a dropout layer), 2 dense layer (one dropout and one leaky Relu layer in the middle).
+ - input shape (1000,4,1)
+ - number of classes for prediction was set to 2
+ - batch size = 16
+ - number of epoch = 5
+
 
 ## Training
+ - Both training and test data sets are reshaped for matching first convolution layer which is a input layer. 
+ 
+ - train_data = (np.arange(train_data.max()) == train_data[...,None]-1).astype('float32')
+ - train_data =  train_data.reshape(2047,1000,4,1)
+ - test_data = (np.arange(test_data.max()) == test_data[...,None]-1).astype('float32')
+ - test_data =  test_data.reshape(500,1000,4,1)
+
+ - history = model.fit(train_data, train_labels, epochs=num_epochs, batch_size=batch_size)
 
 ## Testing
+pred_test_labels = model.predict(test_data)
