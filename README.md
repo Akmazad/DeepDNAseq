@@ -1,8 +1,8 @@
 # DeepRNAseq
-RNA-seq analysis with deep learning using Keras (tensorflow backend) in High performance computing (HPC) environment
+DNA-seq analysis with deep learning using Keras (tensorflow backend) in High performance computing (HPC) environment
 
 ## Installation
-- Preparing HPC for running Pytoroch. 
+- Preparing HPC for running Keras. 
   - Add following modules in the bashrc file. Use "nano ~/.bashrc" for editing it, and paste following lines in that file (at the end), and save it.
   
     - module load cuda/9.0
@@ -13,7 +13,14 @@ RNA-seq analysis with deep learning using Keras (tensorflow backend) in High per
     - module load magma/2.3.0
     - module load pytorch/0.5.0a0x-py36
     - module load intel-mkl/17.0.1.132
-
+  - install keras using pip3 command. This will install keras module in your /home space in the .local/lib directory. You can use "--prefix=" if you want to install it in /short space as described in https://opus.nci.org.au/display/Help/Python.
+      - module load tensorflow/1.8-cudnn7.1-python3.6
+      - module load python3/3.6.2 
+      - module load hdf5/1.10.2
+      - pip3 install -v --no-binary :all: --user keras
+  - You will need to update the PYTHONPATH variable to point to the directory you used, like this:
+      - export PYTHONPATH=/your/home/directory/name/.local/lib/python3.6/site-packages
+      
 ### Example of a bash script for running a python file
 
 #!/bin/bash
