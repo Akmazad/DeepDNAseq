@@ -11,7 +11,6 @@ DNA-seq analysis with deep learning using Keras (tensorflow backend) in High per
     - module load python3/3.6.2
     - module load cmake/3.8.2
     - module load magma/2.3.0
-    - module load pytorch/0.5.0a0x-py36
     - module load intel-mkl/17.0.1.132
   - install keras using pip3 command. This will install keras module in your /home space in the .local/lib directory. You can use "--prefix=" if you want to install it in /short space as described in https://opus.nci.org.au/display/Help/Python.
       - module load tensorflow/1.8-cudnn7.1-python3.6
@@ -55,4 +54,4 @@ Use training dataset from a Toy training data ('toy_TrainData.csv' and 'toy_Trai
  - history = model.fit(train_data, train_labels, epochs=num_epochs, batch_size=batch_size)
 
 ## Testing
-pred_test_labels = model.predict(test_data)
+ - pred_test_labels = model.predict(test_data)
