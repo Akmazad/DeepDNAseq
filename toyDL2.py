@@ -1,5 +1,5 @@
 # example is based on "DL with Python book #CH5 - by Francois Chollet"
-# Example train data is the "toyDat_Bundle_v1.0" (created by A.K.M. Azad)
+# Example train-testing data: "toyDat_Bundle_v1.0" (created by A.K.M. Azad) which were just randomely created
 
 
 def MCC(y_true, y_pred):
