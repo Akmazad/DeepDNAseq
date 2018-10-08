@@ -46,12 +46,11 @@ Use training dataset from a Toy training data ('toy_TrainData.csv' and 'toy_Trai
 ## Training
  - Both training and test data sets are reshaped for matching first convolution layer which is a input layer. 
  
- - train_data = (np.arange(train_data.max()) == train_data[...,None]-1).astype('float32')
- - train_data =  train_data.reshape(2047,1000,4,1)
- - test_data = (np.arange(test_data.max()) == test_data[...,None]-1).astype('float32')
- - test_data =  test_data.reshape(500,1000,4,1)
-
- - history = model.fit(train_data, train_labels, epochs=num_epochs, batch_size=batch_size)
+   - train_data = (np.arange(train_data.max()) == train_data[...,None]-1).astype('float32')
+   - train_data =  train_data.reshape(2047,1000,4,1)
+   - test_data = (np.arange(test_data.max()) == test_data[...,None]-1).astype('float32')
+   - test_data =  test_data.reshape(500,1000,4,1)
+   - history = model.fit(train_data, train_labels, epochs=num_epochs, batch_size=batch_size)
 
 ## Testing
  - pred_test_labels = model.predict(test_data)
