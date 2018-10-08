@@ -1,5 +1,5 @@
 # DeepDNAseq
-DNA-seq analysis with deep learning using Keras (tensorflow backend) in High performance computing (HPC) environment
+DNA-seq analysis with deep learning using Keras (tensorflow backend) in High performance computing (HPC) environment. DeepDNAseq makes a binary classification of the input DNA sequence after being trained with 2047 training samples.
 
 ## Installation
 - Preparing HPC for running Keras. 
