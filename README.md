@@ -1,4 +1,4 @@
-# DeepRNAseq
+# DeepDNAseq
 DNA-seq analysis with deep learning using Keras (tensorflow backend) in High performance computing (HPC) environment
 
 ## Installation
