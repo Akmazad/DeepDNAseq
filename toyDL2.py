@@ -1,4 +1,4 @@
-# example is based on "DL with Python book #CH5 - by Francois Chollet"
+# example is based on "DL with Python book #CH5 - by Francois Chollet" and inspired by another repository called DeepTSS (https://github.com/StudyTSS/DeepTSS)
 # Example train-testing data: "toyDat_Bundle_v1.0" (created by A.K.M. Azad) which were just randomely created
 
 
@@ -115,7 +115,7 @@ score = model.evaluate(test_data, test_labels, verbose=0)
 score 
 
 # Training history
-#np.save('score_CNN_score_', score)
+np.save('score_CNN_score_', score)
 #np.save('toy_MCC_train_', np.asarray(history.history['MCC']))
 #np.save('toy_MCC_val_', np.asarray(history.history['val_MCC']))
 
