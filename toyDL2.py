@@ -121,5 +121,5 @@ score
 
 # testing
 pred_test_labels = model.predict(test_data)
-roc_auc_scoreroc_auc(test_labels, pred_test_labels)
-average_precision_score(test_labels, pred_test_labels)
+#roc_auc_scoreroc_auc(test_labels, pred_test_labels)
+#average_precision_score(test_labels, pred_test_labels)
