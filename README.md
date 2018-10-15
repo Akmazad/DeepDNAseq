@@ -3,7 +3,7 @@ DNA-seq analysis with deep learning using Keras (tensorflow backend) in High per
 
 ## Installation
 - Preparing HPC for running Keras. 
-  - Add following modules in the bashrc file. Use "nano ~/.bashrc" for editing it, and paste following lines in that file (at the end), and save it.
+  - Add following modules in the bashrc file. Use "nano ~/.bashrc" for editing it, and paste following lines in that file (at the end), and save it. This will pre-load all the following modules while logging in.
   
     - module load cuda/9.0
     - module load cudnn/7.1.1-cuda9.0
