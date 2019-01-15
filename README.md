@@ -21,7 +21,7 @@ DNA-seq analysis with deep learning using Keras (tensorflow backend) in High per
       - export PYTHONPATH=/your/home/directory/name/.local/lib/python3.6/site-packages
       
 ### Example of a bash script for running a python file
-
+```
 #!/bin/bash
 #PBS -P yr31
 #PBS -q gpu
@@ -31,7 +31,7 @@ DNA-seq analysis with deep learning using Keras (tensorflow backend) in High per
 #PBS -l wd
 
 python3 <yourPythonFile.py>
-
+```
 ## Training Data
 Use training dataset from a Toy training data ('toy_TrainData.csv' and 'toy_TrainLabel.csv'). This data set represents 2047 training samples (DNA sequences here) composed of random number of positive and negative samples, each having a lenth of 1000. For convenience this data set has been pre- one-hot encoded. Hence it has the dimension of [8188,1000] (2047 * 4 = 8188).
 
