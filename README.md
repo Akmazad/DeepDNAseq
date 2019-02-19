@@ -18,7 +18,7 @@ DNA-seq analysis with deep learning using Keras (tensorflow backend) in High per
       - module load hdf5/1.10.2
       - pip3 install -v --no-binary :all: --user keras
   - You will need to update the PYTHONPATH variable to point to the directory you used, like this:
-      - export PYTHONPATH=/your/home/directory/name/.local/lib/python3.6/site-packages
+      - export PYTHONPATH=/home/561/aa7970/.local/lib/python3.6/site-packages
       
 ### Example of a bash script for running a python file
 ```
